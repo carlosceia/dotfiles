@@ -1,0 +1,5 @@
+" Disable plugins
+call janus#disable_plugin('Syntastic') " syntax checking plugin
+call janus#disable_plugin('Tagbar')    " plugin for browsing the tags of source code files
+call janus#disable_plugin('NrrwRgn')   " focussing on a region and making the rest inaccessible
+call janus#disable_plugin('ZoomWin')   " lets you zoom into a window and out again

@@ -1,0 +1,14 @@
+default_voice: 'vicki'
+engine: 'say'
+notifier: 'off' # if this option passed - you will not receive notifications at all
+
+cap:
+  before_message: 'deploy started'
+  after_message:  'deploy ended'
+
+voices:
+  info: 'pipe'
+
+messages:
+  info: 'hello'
+  warn: 'WE GONNA DIE!!!'

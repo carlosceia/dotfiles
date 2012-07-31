@@ -1,0 +1,31 @@
+color molokai "codeschool / molokai
+
+set nocompatible        " Not compatible with vi
+set encoding=utf-8      " Default file encoding
+set ttyfast             " Improves redrawing
+set cursorline          " Highlight current line
+set visualbell          " No blinking
+set errorbells          " No noise
+set smartcase           " Smartcase search (use purely lower case for insensitive seach), override with '\c' or '\C'
+
+"set transparency=1
+set guifont=Monaco:h12
+set guioptions=aAce
+set guioptions-=T       " Removes top toolbar
+set guioptions-=r       " Removes right hand scroll bar
+set go-=L               " Removes left hand scroll bar
+
+" Slime
+let g:slime_target = "tmux"
+let g:slime_paste_file = tempname() " '$HOME/.slime_paste'
+
+" NERDTree
+let g:NERDTreeWinPos = "right"
+
+" Buffergator
+let g:buffergator_autoexpand_on_split = 0
+let g:buffergator_split_size = 10
+let g:buffergator_viewport_split_policy = 'T' " Split on top
+
+autocmd User Rails let b:surround_{char2nr('-')} = "<% \r %>" " displays <% %> correctly
+:set cpoptions+=$ " puts a $ marker for the end of words/lines in cw/c$ commands
